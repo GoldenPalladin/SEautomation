@@ -96,7 +96,16 @@
   <ItemGroup>
     <Content Include="MicrosoftWebDriver.exe" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\autotestsHabra\Autotests\Autotests.Utilities\Autotests.Utilities.csproj">
+      <Project>{574c34f7-c509-42c5-9131-16b7b023113a}</Project>
+      <Name>Autotests.Utilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\autotestsHabra\Autotests\Autotests.WebPages\Autotests.WebPages.csproj">
+      <Project>{32e95d12-f0bb-42a6-b0fd-4971b4954f5b}</Project>
+      <Name>Autotests.WebPages</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>
